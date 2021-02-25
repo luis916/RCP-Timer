@@ -25,11 +25,9 @@ img{
     padding: 2vh 2vh 2vh 2vh ;
     border-radius: 5px;
     background-color:white;
-    height: 200px;
+   
 }
 h1{padding: 2vh 2vh 2vh 2vh ; font-size: 4vh;}
-#terminar{font-size: 3vh;}
-#ciclos{font-size: 4vh;}
 input{
     margin: 2vh 0 0 0;
     display: block;
