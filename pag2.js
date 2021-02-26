@@ -17,6 +17,6 @@ const getTiempoRestante = tiempoLimite =>{
     }
 }
 h1.style.display = 'block';
-setInterval(()=>{getTiempoRestante('Feb 26 2021 07:00:00 GMT-0300');
+setInterval(()=>{getTiempoRestante('Feb 27 2021 07:00:00 GMT-0300');
 h1.textContent = `Horas:${horasRestantes } Minutos:${minutosRestantes }Segundos:${segundosRestantes}`;
 },10)
