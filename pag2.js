@@ -1,30 +1,22 @@
-
 const segundos = document.getElementById('segundos');
 const volver = document.getElementById('volver');
 const ciclo = document.getElementById('ciclo');
-const dropdownContent = document.getElementById('dropdown-content');
-const dropdownBtn = document.querySelector('.dropdown-btn');
-dropdownContent.style.display = 'none';
-dropdownContent.style.transitionDuration = '10s';
-dropdownBtn.addEventListener('click',function(){
-    dropdownContent.style.display = 'block';
-    setTimeout(function(){
-        dropdownContent.style.transitionDuration = '10s';
-        dropdownContent.style.display = 'none';
-    },4000);
-});
-setInterval(function(){
-    if(segundos.textContent>10){
-        segundos.textContent = segundos.textContent-1;
-    }else
-    if(segundos.textContent<=10){
-        segundos.textContent = segundos.textContent-1;
-       // speechSynthesis.speak(new SpeechSynthesisUtterance(segundos.textContent))
+const h1 = document.getElementById('h1');
+const getTiempoRestante = tiempoLimite =>{
+    let actual = new Date();
+    tiempoRestante = (new Date(tiempoLimite) - actual + 1000)/1000,
+    segundosRestantes = ('0'+Math.floor(tiempoRestante % 60)).slice(-2),
+    minutosRestantes = ('0'+Math.floor(tiempoRestante /60 % 60)).slice(-2),
+    horasRestantes =('0'+Math.floor(tiempoRestante /3600% 24)).slice(-2),
+    diasRestantes = Math.floor(tiempoRestante /(3600*24))
+    return{
+        segundosRestantes,
+        minutosRestantes,
+        horasRestantes,
+        diasRestantes
     }
-},1000);
-
-volver.addEventListener('click',function(){
-   window.onbeforeunload = function(e) {
-        return 'Perdera todos los cambios';
-      };
-})
+}
+h1.style.display = 'block';
+setInterval(()=>{getTiempoRestante('Feb 26 2021 07:00:00 GMT-0300');
+h1.textContent = `Horas:${horasRestantes } Minutos:${minutosRestantes }Segundos:${segundosRestantes}`;
+},10)
