@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    cursor: default;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{background-color: white;}
+header{
+    background-color: rgb(193, 193, 218);
+    height: 6vh;
+    padding: 1vh 0 1vh 0;
+    font-size: 2vh;
+}
+img{
+    height: 5vh;
+}
+.home{
+    background-color:#1D77DC;
+    padding: 1vh 0 1vh 0;
+}
+#restan{
+    margin: 2vh 0 0 0;
+    font-size: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.cuentaAtras{
+    background-color: #1D77DC;
+    width: 8vmax;
+    height: 8vmax;
+    border-radius: 100%;
+    margin: 1vh auto 1vh auto;
+    color: white;
+}
+.cuentaAtras #segundos{
+    position: relative;
+    top: 1.5vh;
+    font-size: 3vmax;
+  
+}
+.cuentaAtras p{
+    position: relative;
+    top: 1.5vh;
+    font-size: 1.5vmax;
+}
+.contadores span,b{
+    display: inline;
+} 
+.contadores p{
+    font-size: 1.3vmax;
+    margin: 0 0 0.5vh 0;
+}
+#reanimacion{
+    border: 1px solid;
+    margin: 0 1vw 1vh 1vw;
+    border-radius: 5px;
+    height: 7vh;
+}
+#reanimacion img{
+    height: 6vh;
+}
+.dropdown{
+    width: 65vw;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 auto 0 auto;
+}
+.dropdown-btn{
+    width: 100%;
+    border: none;
+    padding: 0.5vh 0 0.5vh 0;
+    font-size: 2vmax;
+    background-color: #1D77DC;
+}
+.dropdown-content button{
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 2vmax;
+    
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown:hover .dropdown-content  {
+    display: block;
+}
+#mostrar {
+    border: 1px solid;
+    margin: 1vh auto 0 auto;
+    border-radius: 5px;
+    width: 80vw;
+    display:none;
+    
+}
+#mostrar p{
+    text-align: left;
+    padding: 0  0 0;
+  
+}
+#ventanFlotante,#PresenciaPulso,#desfibrilable{
+    border: 1px solid;
+    margin: 1vh auto 0 auto;
+    border-radius: 5px;
+    width: 80vw;
+
+}
+#ventanFlotante button,#PresenciaPulso button,#desfibrilable button{
+    margin: 1vh 0 1vh 1vh;
+    font-size: 1.8vmax;
+    border: none;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 2px;
+}
+#ventanFlotante p,#PresenciaPulso p {
+    font-size: 2vmax;
+    margin: 1vh 0 0 0;
+}
+#ventanFlotante,#desfibrilable{
+    display: none;
+}
+#joules{
+    border: 1px solid;
+    height: 12vh;
+    margin: 1vh auto 0 auto;
+    width: 80vw;
+    border-radius: 4px;
+    display: none;
+}
+#joules p{
+    margin: 1vh 0 0 0;
+}
+#joules input{
+    width: 90%;
+    box-shadow: 2px 0 5px 0 blue;
+    border: none;border: 1px solid blue;
+    margin: 1vh 0 1vh 0 ;
+}
+#joules button{
+    margin: 0 1vw 0 1vw;
+    padding: 2px;
+    border: none;
+    border: 1px solid;
+    border-radius:4px ;
+}

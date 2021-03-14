@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC Timer</title>
+    <link rel="stylesheet" href="pag2.css">
+</head>
+<body id="body">
+        <header><!--cabecera-->
+            <h1 id="titulo">RCP Timer</h1>
+        </header>
+        <div class="home"><!--home(volver a la pág principal)-->
+            <a id="volver" href="index.html"><img src="home.ico"></a>
+        </div>
+        <div class="contadores"><!--tiempo para reanimación-->
+            <div class="cuentaAtras">
+                <span id="segundos">120</span><p>SEG</p>
+            </div>
+            <p>Para terminar el primer</p>
+            <span id="ciclo">1</span><b>° Ciclo de Reanimación.</b>
+        </div>
+        <div id="reanimacion">
+            <img src="reanimacion.ico" alt="reanimacion">
+        </div>
+
+        <!--//////////////////////////////////////////////////////////////-->
+        <div class="dropdown">
+            <button class="dropdown-btn">Seleccione fármaco a administrar</button>
+            <div class="dropdown-content">
+                <button  id="1mgAdrenalina">1 mg Adrenalina</button><hr>
+                <button id="0.5mgAtropina">0.5 mg Atropina</button><hr>
+                <button id="1mgAtropina">1 mg Atropina</button><hr>
+                <button id="1.25GrSulfatoMagnesio">1.25 gr. Sulfato de Magnesio</button><hr>
+                <button id="150mgAmiodarona">150 mg Amiodarona</button><hr>
+                <button id="300mgAmiodarona">300 mg Amiodarona</button><hr>
+                <button id="100mgLidocaina">100 mg Lidocaina</button><hr>
+                <button id="1grCloruroCalcio">1 gr Cloruro de Calcio</button><hr>
+                <button id="0.4mgNaloxona">0.4 mg Naloxona</button><hr>
+                <button id="20mlDextrosa">20 ml Dextrosa 30%</button><hr>
+                <button id="250mlBicarbonatoSodico">250 ml Bicarbonato Sódico 2/3 Mol</button><hr>
+                <button id="500mlSolFisiologico">500 ml Sol Fisiolgico 0.9%</button><hr>
+                <button id="500mlSolRingerLactato">500 ml Sol Ringer Lactato</button>
+            </div>
+        </div>
+        <!--Mostrar elementos creados-->
+    <div id="mostrar"> 
+
+        </div>
+        <div id="ventanFlotante">
+
+        </div>
+        <div id="desfibrilable">
+
+        </div>
+        <div id="joules">
+
+        </div>
+        <audio id="audio" src="15seg.mp3"></audio>
+</body>
+<script src="pag2.js"></script>
+</html>
