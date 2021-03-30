@@ -76,7 +76,7 @@ _1mg_adrenalina.addEventListener('click',function evento(){
     let Cuenta_10_segundos_span_texto = document.createTextNode('180');
     Cuenta_10_segundos_span.appendChild(Cuenta_10_segundos_span_texto);
     Cuenta_10_segundos_span.style.background = 'black';
-    Cuenta_10_segundos_span.style.marginLeft = '3vh';
+    Cuenta_10_segundos_span.style.marginLeft = '.5vh';
     _1mg_adrenalina.appendChild(Cuenta_10_segundos_span);
     let cuentaAtras_10 = setInterval(()=>{
         Cuenta_10_segundos_span.textContent = parseInt(Cuenta_10_segundos_span.textContent)-1;
@@ -283,9 +283,9 @@ div10segundos_span.appendChild(div10segundos_span_texto);
             },1000);div10segundos_span.textContent = 10;}
 //_10segundos();
 reiniciar.addEventListener('click',()=>{
-    if (confirm('Seguro que desea reiniciar?')){
+   // if (confirm('Seguro que desea reiniciar?')){
         window.location.reload();
     }
     
-});
+);
 cuentaAtras();
